@@ -1,3 +1,3 @@
-module github.com/sergzam/golang-united-school-homework-2
+module gounited/lecture2
 
 go 1.17
