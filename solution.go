@@ -13,19 +13,19 @@ import (
 // CalcSquare(10.0, SidesCircle)
 
 const (
-	Circle   uint8 = 0
-	Triangle uint8 = 3
-	Square   uint8 = 4
+	SidesCircle   uint8 = 0
+	SidesTriangle uint8 = 3
+	SidesSquare   uint8 = 4
 )
 
 //goland:noinspection GoUnusedExportedFunction
 func CalcSquare(sideLen float64, sidesNum uint8) float64 {
 	switch sidesNum {
-	case Circle:
-		return math.Pi * math.Pow(sideLen/2, 2)
-	case Triangle:
+	case SidesCircle:
+		return math.Pi * math.Pow(sideLen, 2)
+	case SidesTriangle:
 		return math.Sqrt(3) / 4 * math.Pow(sideLen, 2)
-	case Square:
+	case SidesSquare:
 		return math.Pow(sideLen, 2)
 	}
 	return 0
